@@ -1,6 +1,27 @@
 package stack;
+
+import linkedlist.INode;
+
 public class MyStack {
-	public static void main(String[] args) {
-		System.out.println("Welcome to master Branch of stack");
+	
+	private final MyLinkedList MyLinkedList;
+	public MyStack(){
+		
+		this.MyLinkedList = new MyLinkedList();
+	}
+	public void  push(INode myNode) {
+		
+		MyLinkedList.add(myNode);	
+		
+	}
+
+	public INode peak() {
+		
+		return MyLinkedList.head;
+		
+	}
+	public void printStack() {
+		MyLinkedList.printNodes();
+		
 	}
 }

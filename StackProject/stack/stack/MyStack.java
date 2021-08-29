@@ -24,4 +24,5 @@ public class MyStack {
 		MyLinkedList.printNodes();
 		
 	}
+
 }

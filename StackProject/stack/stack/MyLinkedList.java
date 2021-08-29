@@ -7,6 +7,7 @@ public class MyLinkedList<K> {
 		
 		public INode head;
 		public INode tail;
+		private INode tempNode;
 		
 		public MyLinkedList() {
 			this.head = null;
@@ -61,7 +62,7 @@ public class MyLinkedList<K> {
 	}
 
 		public INode pop() {
-			
+		
 			INode tempNode = this.head;
 			this.head = head.getNext();
 			return tempNode;

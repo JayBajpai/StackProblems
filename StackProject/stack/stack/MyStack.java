@@ -24,4 +24,13 @@ public class MyStack {
 		MyLinkedList.printNodes();
 		
 	}
+	
+	public INode pop() {
+		return MyLinkedList.pop();
+		
+	}
+	
 }
+
+
+
